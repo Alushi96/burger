@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Burgers</h1>
-            <ul>
+            <ol>
                 {{#each burgers}}
                     {{#unless devoured}}
                     <li class="order">
@@ -11,11 +11,11 @@
                         <button class="devour" data-id="{{id}}" data-devoured="1">Devour</button>
                     {{/unless}}
                 {{/each}}
-            </ul>
+            </ol>
         </div>
         <div class="col-md-6">
             <h2>Devoured Burgers</h2>
-            <ul>
+            <ol>
                 {{#each burgers}}
                     {{#if devoured}}
                     <li class="order">
@@ -23,7 +23,7 @@
                     </li>
                     {{/if}}
                 {{/each}}
-            </ul>
+            </ol>
         </div>
     </div>
     <div class="row">
@@ -35,6 +35,7 @@
                     <input type="text" id="bg" name="burger_name">
                 </div>
                 <button type="submit">Add Burger</button>
+                <p>Enter the name of the burger you would like to eat and click Add Burger!</p>
             </form>
         </div>
     </div>
